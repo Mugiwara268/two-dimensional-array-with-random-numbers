@@ -1,0 +1,48 @@
+#include <iostream> 
+#include <cstdlib> // For rand() and srand() 
+#include <ctime>   // For time() 
+ 
+using namespace std; 
+ 
+int main() { 
+    int rows, cols; 
+ 
+    
+    cout << "Enter number of rows: "; 
+    cin >> rows; 
+    cout << "Enter number of cols: "; 
+    cin >> cols; 
+ 
+     
+    int** arr = new int* [rows];//creation of two dimensional array 
+    for (int i = 0; i < rows; i++) { 
+        arr[i] = new int[cols]; 
+    } 
+ 
+    
+    srand(time(0));//speed the random numbers generation 
+ 
+   
+    for (int i = 0; i < rows; i++) { 
+        for (int j = 0; j < cols; j++) {//generation of two dimensional array with random numbers 
+            arr[i][j] = rand() % 9 + 1;  
+        } 
+    } 
+ 
+     
+    cout << "The array filled with random numbers:\n"; 
+    for (int i = 0; i < rows; i++) { 
+        for (int j = 0; j < cols; j++) { //Output two dimensional array 
+            cout << arr[i][j] << " "; 
+        } 
+        cout << endl; 
+    } 
+ 
+ 
+    for (int i = 0; i < rows; i++) { //Free memory for the two dimensional array 
+        delete[] arr[i]; 
+    } 
+    delete[] arr; 
+ 
+    return 0; 
+}
