@@ -9,9 +9,9 @@ int main() {
  
     
     cout << "Enter number of rows: "; 
-    cin >> rows; 
+    cin >> rows; //i is for rows 
     cout << "Enter number of cols: "; 
-    cin >> cols; 
+    cin >> cols; //j is for cols 
  
      
     int** arr = new int* [rows];//creation of two dimensional array 
