@@ -24,7 +24,7 @@ int main() {
  
    
     for (int i = 0; i < rows; i++) { 
-        for (int j = 0; j < cols; j++) {//generation of two dimensional array with random numbers 
+        for (int j = 0; j < cols; j++) {//generation of two dimensional array with random numbers (remember i-rows, j-cols) 
             arr[i][j] = rand() % 9 + 1;  
         } 
     } 
