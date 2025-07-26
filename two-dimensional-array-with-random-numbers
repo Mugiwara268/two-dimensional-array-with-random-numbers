@@ -42,7 +42,7 @@ int main() {
     for (int i = 0; i < rows; i++) { //Free memory for the two dimensional array 
         delete[] arr[i]; 
     } 
-    delete[] arr; 
+    delete[] arr;//free memory
  
     return 0;//no return
 }
