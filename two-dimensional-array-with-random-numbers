@@ -2,7 +2,7 @@
 #include <cstdlib> // For rand() and srand() 
 #include <ctime>   // For time() 
  
-using namespace std; 
+using namespace std;//for std
  
 int main() { 
     int rows, cols; 
