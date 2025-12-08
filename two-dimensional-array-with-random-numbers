@@ -35,7 +35,7 @@ int main() {
         for (int j = 0; j < cols; j++) { //Output two dimensional array 
             cout << arr[i][j] << " "; 
         } 
-        cout << endl; 
+        cout << endl;//free space
     } 
  
  
