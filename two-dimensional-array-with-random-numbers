@@ -5,7 +5,7 @@
 using namespace std;//for std
  
 int main() { 
-    int rows, cols; 
+    int rows, cols;//input of the dates
  
     
     cout << "Enter number of rows: "; 
