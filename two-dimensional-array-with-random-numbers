@@ -4,7 +4,7 @@
  
 using namespace std;//for std
  
-int main() { 
+int main() {//main function 
     int rows, cols;//input of the dates
  
     
